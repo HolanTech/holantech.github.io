@@ -9,10 +9,11 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous" />
     <!-- bootsrap icon -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <!-- my css -->
     <link rel="stylesheet" href="style.css" />
-    <!-- akhir my css -->
 
     <title>Tugas Uas</title>
   </head>
@@ -33,7 +34,10 @@
               <a class="nav-link" href="#about">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#projects">projects</a>
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#gallery">Gallery</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#contact">Contact</a>
@@ -46,7 +50,7 @@
 
     <!-- jumbotron -->
     <section class="jumbotron text-center">
-      <img src="img/holan.jpg" alt="holan" width="200" class="rounded-circle" />
+      <img src="img/holan.jpg" alt="holan" width="200" class="rounded-circle" border="3" />
       <h1 class="display-4">Munti Parsi Holan</h1>
       <p class="lead">Mahasiswa | Owner | Programer</p>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
@@ -67,10 +71,12 @@
             <h2>Aboute me</h2>
           </div>
           <div class="row justify-content-center fs-5 text-center">
-            <div class="col-md-4">
+            <div class="col-md-4" data-aos="fade-right">
               <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda dolores delectus quia animi vel, sint eum necessitatibus nisi, beatae unde blanditiis eos veniam nemo eius aperiam fugit accusantium iure voluptas.</p>
             </div>
-            <div class="col-md-4"><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa exercitationem recusandae rem dolorem quisquam aliquid quis error quam eligendi aut!</p></div>
+            <div class="col-md-4" data-aos="fade-left" data-aos-delay="300">
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa exercitationem recusandae rem dolorem quisquam aliquid quis error quam eligendi aut!</p>
+            </div>
           </div>
         </div>
       </div>
@@ -94,7 +100,7 @@
           </div>
           <div class="row">
             <div class="col-md-4 mb-3">
-              <div class="card">
+              <div class="card" data-aos="flip-left" data-aos-duration="500">
                 <img src="img/projects/1.jpg" class="card-img-top" alt="projects1" />
                 <div class="card-body">
                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -102,7 +108,7 @@
               </div>
             </div>
             <div class="col-md-4 mb-3">
-              <div class="card">
+              <div class="card" data-aos="flip-left" data-aos-duration="500" data-aos-delay="100">
                 <img src="img/projects/2.jpg" class="card-img-top" alt="projects2" />
                 <div class="card-body">
                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -110,7 +116,7 @@
               </div>
             </div>
             <div class="col-md-4 mb-3">
-              <div class="card">
+              <div class="card" data-aos="flip-left" data-aos-duration="500" data-aos-delay="200">
                 <img src="img/projects/3.jpg" class="card-img-top" alt="projects3" />
                 <div class="card-body">
                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -118,7 +124,7 @@
               </div>
             </div>
             <div class="col-md-4 mb3">
-              <div class="card">
+              <div class="card" data-aos="flip-left" data-aos-duration="500" data-aos-delay="300">
                 <img src="img/projects/4.jpg" class="card-img-top" alt="projects" />
                 <div class="card-body">
                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -126,7 +132,7 @@
               </div>
             </div>
             <div class="col-md-4 mb-3">
-              <div class="card">
+              <div class="card" data-aos="flip-left" data-aos-duration="500" data-aos-delay="400">
                 <img src="img/projects/5.jpg" class="card-img-top" alt="projects5" />
                 <div class="card-body">
                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -134,7 +140,7 @@
               </div>
             </div>
             <div class="col-md-4 mb-3">
-              <div class="card">
+              <div class="card" data-aos="flip-left" data-aos-duration="500" data-aos-delay="500">
                 <img src="img/projects/6.jpg" class="card-img-top" alt="projects6" />
                 <div class="card-body">
                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -153,6 +159,70 @@
       </svg>
     </section>
     <!-- akhir projects -->
+
+    <!-- galley -->
+    <section id="gallery">
+      <div class="container">
+        <div class="row text-center mb-3">
+          <div class="col">
+            <div class="h2">Gallery</div>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-3" data-aos="fade-down" data-aos-delay="50">
+            <a href="#">
+              <img src="img/gallery/1.jpg" alt="gambar1" class="img-fluid gallery-img" />
+            </a>
+          </div>
+          <div class="col-md-3" data-aos="fade-down" data-aos-delay="100">
+            <a href="#">
+              <img src="img/gallery/2.jpg" alt="gambar2" class="img-fluid gallery-img" />
+            </a>
+          </div>
+          <div class="col-md-3" data-aos="fade-down" data-aos-delay="150">
+            <a href="#">
+              <img src="img/gallery/3.jpg" alt="gambar3" class="img-fluid gallery-img" />
+            </a>
+          </div>
+          <div class="col-md-3" data-aos="fade-down" data-aos-delay="200">
+            <a href="#">
+              <img src="img/gallery/4.jpg" alt="gambar4" class="img-fluid gallery-img" />
+            </a>
+          </div>
+          <div class="col-md-3" data-aos="fade-down" data-aos-delay="250">
+            <a href="#">
+              <img src="img/gallery/5.jpg" alt="gambar5" class="img-fluid gallery-img" />
+            </a>
+          </div>
+          <div class="col-md-3" data-aos="fade-down" data-aos-delay="300">
+            <a href="#">
+              <img src="img/gallery/6.jpg" alt="gambar6" class="img-fluid gallery-img" />
+            </a>
+          </div>
+          <div class="col-md-3" data-aos="fade-down" data-aos-delay="350">
+            <a href="#">
+              <img src="img/gallery/7.jpg" alt="gambar7" class="img-fluid gallery-img" />
+            </a>
+          </div>
+          <div class="col-md-3" data-aos="fade-down" data-aos-delay="400">
+            <a href="#">
+              <img src="img/gallery/8.jpg" alt="gambar8" class="img-fluid gallery-img" />
+            </a>
+          </div>
+          <div class="col-md-3" data-aos="fade-down" data-aos-delay="450">
+            <a href="#">
+              <img src="img/gallery/9.jpg" alt="gambar9" class="img-fluid gallery-img" />
+            </a>
+          </div>
+          <div class="col-md-3" data-aos="fade-down" data-aos-delay="500">
+            <a href="#">
+              <img src="img/gallery/10.jpg" alt="gambar10" class="img-fluid gallery-img" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- akhir gallery -->
 
     <!-- contact -->
     <section id="contact">
@@ -208,6 +278,14 @@
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        once: true,
+        duration: 2000,
+      });
+    </script>
 
     <script>
       const scriptURL = "https://script.google.com/macros/s/AKfycbzZYg0tMW7ntk6Bv7L7Hz1Ex_UaWDhnDa81kJrRma5Pdb4xHDYPfPcrq0CQ_EB921SY/exec";
